@@ -1,4 +1,4 @@
-# [NOME DO PROJETO] — Contexto para Claude Code
+# site_zoomma — Contexto para Claude Code
 
 ## Stack
 - **Frontend/Backend:** Next.js 14 (App Router)
