@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================================================
+   DESIGN TOKENS — CSS Variables
+   Personalize aqui as cores do seu projeto.
+   Estas variáveis são usadas pelo Tailwind e shadcn/ui.
+   ===================================================== */
+
+:root {
+  /* shadcn/ui tokens */
+  --radius: 0.5rem;
+  --background: #fafaf8;
+  --foreground: #1c1c1e;
+  --card: #ffffff;
+  --card-foreground: #1c1c1e;
+  --popover: #ffffff;
+  --popover-foreground: #1c1c1e;
+  --primary: #c9a050;
+  --primary-foreground: #1c1c1e;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #1c1c1e;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #1c1c1e;
+  --destructive: #dc2626;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #c9a050;
+}
+
+.dark {
+  --background: #1c1c1e;
+  --foreground: #fafaf8;
+  --card: #27272a;
+  --card-foreground: #fafaf8;
+  --popover: #27272a;
+  --popover-foreground: #fafaf8;
+  --primary: #c9a050;
+  --primary-foreground: #1c1c1e;
+  --secondary: #3f3f46;
+  --secondary-foreground: #fafaf8;
+  --muted: #3f3f46;
+  --muted-foreground: #a1a1aa;
+  --accent: #3f3f46;
+  --accent-foreground: #fafaf8;
+  --destructive: #ef4444;
+  --border: #3f3f46;
+  --input: #3f3f46;
+  --ring: #c9a050;
+}
+
+/* Tipografia base */
+body {
+  font-family: var(--font-inter), sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-manrope), sans-serif;
+}
