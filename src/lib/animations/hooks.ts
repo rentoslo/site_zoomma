@@ -68,14 +68,18 @@ export function useStaggerChars<T extends HTMLElement = HTMLElement>(deps: unkno
     const fragments: string[] = [];
     el.querySelectorAll("[data-split]").forEach((node) => {
       const text = node.textContent ?? "";
+      // Wrap each word in a no-break container so the browser never breaks
+      // mid-word when character spans have display:inline-block.
       const html = text
-        .split("")
-        .map((ch) =>
-          ch === " "
-            ? '<span class="stagger-char">&nbsp;</span>'
-            : `<span class="stagger-char">${ch}</span>`
-        )
-        .join("");
+        .split(" ")
+        .map((word) => {
+          const chars = word
+            .split("")
+            .map((ch) => `<span class="stagger-char">${ch}</span>`)
+            .join("");
+          return `<span style="display:inline-block;white-space:nowrap">${chars}</span>`;
+        })
+        .join('<span class="stagger-char">&nbsp;</span>');
       (node as HTMLElement).innerHTML = html;
       fragments.push(text);
     });

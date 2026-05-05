@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useI18n } from "@/lib/i18n/context";
 import LangSwitcher from "./LangSwitcher";
 import { cn } from "@/lib/utils";
@@ -26,16 +27,15 @@ export default function Navbar() {
       )}
     >
       <div className="container-zoomma flex h-16 items-center justify-between md:h-20">
-        <a href="#top" className="group flex items-center gap-2.5" aria-label="Zoomma — home">
-          <span className="relative flex size-9 items-center justify-center overflow-hidden rounded-xl bg-white/[0.06] backdrop-blur ring-1 ring-white/10">
-            <span className="absolute inset-0 bg-gradient-electric opacity-30 transition-opacity duration-500 group-hover:opacity-60" />
-            <span className="relative font-display text-base font-bold tracking-tight text-white">
-              Z
-            </span>
-          </span>
-          <span className="font-display text-lg font-semibold tracking-tight text-white">
-            zoomma
-          </span>
+        <a href="#top" className="group flex items-center" aria-label="Zoomma — home">
+          <Image
+            src="/logo-white.png"
+            alt="Zoomma"
+            width={120}
+            height={32}
+            className="h-8 w-auto object-contain opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+            priority
+          />
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">

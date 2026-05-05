@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useI18n } from "@/lib/i18n/context";
 
 export default function Footer() {
@@ -11,16 +12,14 @@ export default function Footer() {
       <div className="container-zoomma">
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-end">
           <div className="max-w-md">
-            <div className="flex items-center gap-2.5">
-              <span className="relative flex size-9 items-center justify-center overflow-hidden rounded-xl bg-white/[0.06] ring-1 ring-white/10">
-                <span className="absolute inset-0 bg-gradient-electric opacity-30" />
-                <span className="relative font-display text-base font-bold tracking-tight text-white">
-                  Z
-                </span>
-              </span>
-              <span className="font-display text-lg font-semibold tracking-tight text-white">
-                zoomma
-              </span>
+            <div>
+              <Image
+                src="/logo-white.png"
+                alt="Zoomma"
+                width={130}
+                height={34}
+                className="h-8 w-auto object-contain opacity-75"
+              />
             </div>
             <p className="mt-5 text-sm leading-relaxed text-white/55">{t.footer.tagline}</p>
           </div>

@@ -19,6 +19,7 @@ export type Dictionary = {
   };
   hero: {
     eyebrow: string;
+    niche_strip: string;
     h1_line1: string;
     h1_line2: string;
     aeo: string;
@@ -125,7 +126,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       cta: "Diagnóstico Estratégico",
     },
     hero: {
-      eyebrow: "Marketing Consultivo Estratégico",
+      eyebrow: "Para clínicas, salões e studios de beleza",
+      niche_strip: "Clínicas de estética · Studios de beleza · Harmonização facial · Salões",
       h1_line1: "Pare de improvisar.",
       h1_line2: "Comece a escalar.",
       aeo: "A Zoomma é uma consultoria estratégica de marketing para negócios da beleza — salões, clínicas e harmonização — operados por brasileiros e hispanos nos Estados Unidos. Unimos estratégia de negócio, marketing orientado a vendas e gestão comercial em um único parceiro.",
@@ -137,19 +139,19 @@ export const dictionaries: Record<Locale, Dictionary> = {
     problem: {
       eyebrow: "O que estamos vendo",
       h2: "Você não tem um problema de marketing. Você tem um problema de clareza.",
-      intro: "Conversamos com dezenas de donos de negócios da beleza nos EUA. Os sintomas se repetem:",
+      intro: "Conversamos com dezenas de donos de negócios da beleza. Os sintomas se repetem:",
       pains: [
         "Faturamento que cresce, mas margem que não acompanha — e ninguém sabe explicar por quê.",
-        "Tráfego pago rodando, leads chegando — mas a agenda continua furada por no-shows.",
-        "Equipe de vendas fechando no improviso, sem método, sem follow-up, sem previsibilidade.",
+        "Tráfego pago rodando, leads chegando — mas clientes que marcam e não aparecem ainda travam a agenda.",
+        "Equipe de vendas fechando no improviso, sem método, sem acompanhamento do cliente, sem previsibilidade.",
         "Conteúdo bonito no Instagram, sem propósito comercial, sem ligação com a oferta.",
-        "Decisões tomadas no feeling — não em dados, não em estratégia.",
+        "Decisões tomadas no achismo — não em dados, não em estratégia.",
       ],
     },
     solution: {
       eyebrow: "A Zoomma",
-      h2: "Não somos agência. Somos sua sócia de crescimento.",
-      sub: "Três frentes integradas, conduzidas pelos sócios — não terceirizadas para estagiário. Estratégia que conversa com vendas que conversa com marketing.",
+      h2: "Não somos agência. Somos seu parceiro estratégico de crescimento.",
+      sub: "Três frentes integradas, com participação direta dos sócios na estratégia. Marketing que conversa com vendas que conversa com negócio.",
       pillars: [
         {
           kicker: "01",
@@ -159,12 +161,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           kicker: "02",
           title: "Marketing Orientado a Vendas",
-          desc: "Conteúdo com propósito comercial. Tráfego pago calibrado para CAC e LTV — não para vaidade.",
+          desc: "Conteúdo com propósito comercial. Tráfego pago pensado para trazer clientes reais — não para inflar números sem retorno.",
         },
         {
           kicker: "03",
           title: "Gestão Comercial",
-          desc: "Treinamento de vendas, scripts, follow-up estruturado e redução de no-shows. Lead que chega, lead que fecha.",
+          desc: "Treinamento de vendas, scripts, acompanhamento estruturado do cliente e redução de agendamentos perdidos. Lead que chega, lead que fecha.",
         },
       ],
     },
@@ -186,7 +188,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           n: "03",
           title: "Conversão",
-          desc: "Funil comercial estruturado: scripts, follow-up, redução de no-shows e fechamento previsível.",
+          desc: "Funil comercial estruturado: scripts, acompanhamento do cliente, redução de agendamentos perdidos e fechamento previsível.",
         },
         {
           n: "04",
@@ -206,7 +208,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       items: [
         {
           title: "Clareza de números",
-          desc: "Você passa a saber CAC, LTV, ticket médio, taxa de conversão e payback. Decisão deixa de ser feeling.",
+          desc: "Você passa a entender quanto custa conquistar cada cliente, quanto ele deixa no seu negócio e se está crescendo de verdade. Decisão vira dado, não achismo.",
         },
         {
           title: "Posicionamento que vende",
@@ -214,7 +216,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           title: "Funil que fecha",
-          desc: "De primeiro contato a venda recorrente, com scripts, follow-up e redução de no-shows.",
+          desc: "De primeiro contato a venda recorrente, com scripts, acompanhamento e redução de agendamentos perdidos.",
         },
         {
           title: "Equipe treinada",
@@ -222,23 +224,23 @@ export const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           title: "Tráfego com ROI",
-          desc: "Mídia paga conectada à venda, não a curtidas. CAC sob controle, escala previsível.",
+          desc: "Mídia paga conectada à venda, não a curtidas. Custo por cliente sob controle, escala previsível.",
         },
         {
           title: "Sócios envolvidos",
-          desc: "Quem conduz seu projeto são os sócios — Renato, Bruno, Camila e Paola — não estagiários.",
+          desc: "Os sócios — Renato, Bruno, Camila e Paola — participam ativamente de cada projeto, garantindo direção estratégica e qualidade na execução.",
         },
       ],
     },
     midCta: {
       h2: "Cada mês de improviso é um mês de margem que você não recupera.",
-      sub: "O diagnóstico é gratuito. A clareza, irreversível.",
+      sub: "O diagnóstico é gratuito. O que você vai descobrir sobre seu negócio, não tem preço.",
       cta: "Solicitar Diagnóstico Estratégico",
     },
     trust: {
       eyebrow: "Nosso compromisso",
-      h2: "A honestidade que falta no mercado.",
-      promise: "Antes de aceitar qualquer projeto, fazemos uma análise de 48 horas. Se a Zoomma não é a parceira certa para o seu momento, dizemos. Sem rodeios.",
+      h2: "Integridade e honestidade acima de tudo.",
+      promise: "Antes de iniciar qualquer projeto, dedicamos 48 horas para entender se somos realmente o parceiro certo para você neste momento. Se não formos, dizemos com clareza — porque acreditamos que o encaixe certo importa mais do que fechar mais um contrato.",
       notFor: "A Zoomma não é para você se",
       forYou: "A Zoomma é para você se",
       notForList: [
@@ -250,7 +252,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       forYouList: [
         "Você quer um parceiro estratégico envolvido na operação.",
         "Você está disposto a olhar para os dados — mesmo os incômodos.",
-        "Você entende que crescimento sustentável leva tempo, não milagre.",
+        "Você entende que crescimento sustentável leva tempo, não é milagre.",
         "Você opera no mercado da beleza nos EUA e quer escalar com clareza.",
       ],
     },
@@ -264,12 +266,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
         col3: "Zoomma",
       },
       rows: [
-        { topic: "Quem conduz", agency: "Estagiário ou júnior", zoomma: "Sócios da operação" },
+        { topic: "Quem cuida da estratégia", agency: "Times com muitos clientes simultâneos", zoomma: "Sócios diretamente envolvidos" },
         { topic: "Escopo", agency: "Marketing isolado", zoomma: "Estratégia + marketing + vendas" },
-        { topic: "Métrica", agency: "Cliques, alcance, curtidas", zoomma: "CAC, LTV, margem, payback" },
+        { topic: "Métrica principal", agency: "Cliques, alcance e curtidas", zoomma: "Clientes gerados, margem e crescimento real" },
         { topic: "Modelo", agency: "Pacote engessado", zoomma: "Projeto sob medida" },
-        { topic: "Vínculo", agency: "Contrato, fee mensal", zoomma: "Sócia de crescimento" },
-        { topic: "Velocidade de execução", agency: "Mais rápida em entregas táticas", zoomma: "Mais lenta no início — investimos no diagnóstico" },
+        { topic: "Postura", agency: "Fornecedor de serviço", zoomma: "Parceiro estratégico dedicado" },
+        { topic: "Velocidade de execução", agency: "Entrega rápida desde o início", zoomma: "Começa com diagnóstico — para crescer na direção certa" },
       ],
       fairness: "Sim, agência entrega rápido em tarefas pontuais. Se é isso que você precisa, não somos a melhor escolha — e está tudo bem.",
     },
@@ -291,7 +293,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           q: "Em quanto tempo vejo resultado?",
-          a: "Resultado de tráfego e captação aparece em semanas. Resultado estrutural — margem, posicionamento, retenção — leva de 90 a 180 dias. Quem promete antes disso está mentindo.",
+          a: "Resultado de tráfego e captação aparece em semanas. Resultado estrutural — margem, posicionamento, retenção — leva de 90 a 180 dias. Qualquer promessa de prazo menor merece ser avaliada com cuidado.",
         },
         {
           q: "Vocês atendem em português, espanhol e inglês?",
@@ -299,7 +301,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           q: "Quem conduz o meu projeto?",
-          a: "Os sócios — Renato, Bruno, Camila e Paola. Não terceirizamos a estratégia. Camila e Paola trazem expertise direta do setor de beleza.",
+          a: "Os sócios — Renato, Bruno, Camila e Paola. A estratégia passa por nós. Camila e Paola trazem experiência direta do setor de beleza.",
         },
         {
           q: "Como começa?",
@@ -310,18 +312,18 @@ export const dictionaries: Record<Locale, Dictionary> = {
     finalCta: {
       eyebrow: "Próximo passo",
       h2: "Solicite seu Diagnóstico Estratégico.",
-      sub: "Em 48 horas, retornamos com uma análise inicial do seu negócio. Sem compromisso. Sem pressão de venda.",
+      sub: "Em até 48 horas, entramos em contato para iniciar o processo de análise. Sem compromisso e sem pressão.",
       form: {
         name: "Nome completo",
         whatsapp: "WhatsApp (com DDI)",
-        instagram: "Instagram do negócio (opcional)",
+        instagram: "Instagram do negócio",
         email: "Email (opcional)",
         challenge: "Maior desafio hoje",
         challenge_options: [
           "Faturamento estagnado",
-          "CAC alto / margem baixa",
+          "Custo por cliente alto / margem baixa",
           "Equipe de vendas sem método",
-          "Muitos no-shows / leads frios",
+          "Muitos agendamentos perdidos / leads frios",
           "Posicionamento confuso",
           "Outro",
         ],
@@ -337,7 +339,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       },
     },
     footer: {
-      tagline: "Marketing Consultivo Estratégico para a beleza nos EUA.",
+      tagline: "Parceiro estratégico de crescimento para o mercado da beleza.",
       rights: "Todos os direitos reservados.",
       contact: "Contato",
     },
@@ -361,7 +363,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       cta: "Diagnóstico Estratégico",
     },
     hero: {
-      eyebrow: "Marketing Consultivo Estratégico",
+      eyebrow: "Para clínicas, salones y estudios de belleza",
+      niche_strip: "Clínicas estéticas · Estudios de belleza · Armonización facial · Salones",
       h1_line1: "Deja de improvisar.",
       h1_line2: "Empieza a escalar.",
       aeo: "Zoomma es una consultoría estratégica de marketing para negocios de belleza — salones, clínicas y armonización — operados por brasileños e hispanos en los Estados Unidos. Unimos estrategia de negocio, marketing orientado a ventas y gestión comercial en un solo socio.",
@@ -373,19 +376,19 @@ export const dictionaries: Record<Locale, Dictionary> = {
     problem: {
       eyebrow: "Lo que estamos viendo",
       h2: "No tienes un problema de marketing. Tienes un problema de claridad.",
-      intro: "Hablamos con decenas de dueños de negocios de belleza en EE.UU. Los síntomas se repiten:",
+      intro: "Hablamos con decenas de dueños de negocios de belleza. Los síntomas se repiten:",
       pains: [
         "Facturación que crece, pero margen que no acompaña — y nadie sabe explicar por qué.",
-        "Tráfico pagado activo, leads llegando — pero la agenda sigue con huecos por no-shows.",
-        "Equipo de ventas cerrando por improvisación, sin método, sin follow-up, sin previsibilidad.",
+        "Tráfico pagado activo, leads llegando — pero clientes que agendan y no aparecen siguen frenando la agenda.",
+        "Equipo de ventas cerrando por improvisación, sin método, sin seguimiento al cliente, sin previsibilidad.",
         "Contenido bonito en Instagram, sin propósito comercial, sin conexión con la oferta.",
-        "Decisiones tomadas por intuición — no por datos, no por estrategia.",
+        "Decisiones tomadas por instinto — no por datos, no por estrategia.",
       ],
     },
     solution: {
       eyebrow: "Zoomma",
-      h2: "No somos agencia. Somos tu socia de crecimiento.",
-      sub: "Tres frentes integrados, conducidos por los socios — no tercerizados a un becario. Estrategia que conversa con ventas que conversa con marketing.",
+      h2: "No somos agencia. Somos tu socio estratégico de crecimiento.",
+      sub: "Tres frentes integrados, con participación directa de los socios en la estrategia. Marketing que conversa con ventas que conversa con el negocio.",
       pillars: [
         {
           kicker: "01",
@@ -395,12 +398,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
         {
           kicker: "02",
           title: "Marketing Orientado a Ventas",
-          desc: "Contenido con propósito comercial. Tráfico pagado calibrado por CAC y LTV — no por vanidad.",
+          desc: "Contenido con propósito comercial. Tráfico pagado pensado para traer clientes reales — no para inflar números sin retorno.",
         },
         {
           kicker: "03",
           title: "Gestión Comercial",
-          desc: "Entrenamiento de ventas, scripts, follow-up estructurado y reducción de no-shows. Lead que llega, lead que cierra.",
+          desc: "Entrenamiento de ventas, scripts, seguimiento estructurado del cliente y reducción de citas perdidas. Lead que llega, lead que cierra.",
         },
       ],
     },
@@ -411,32 +414,32 @@ export const dictionaries: Record<Locale, Dictionary> = {
       steps: [
         { n: "01", title: "Estrategia", desc: "Diagnóstico, posicionamiento y plan. Antes de tocar cualquier anuncio, entendemos el negocio." },
         { n: "02", title: "Atracción", desc: "Contenido y media pagada calibrados para el público correcto, con mensaje alineado a la oferta." },
-        { n: "03", title: "Conversión", desc: "Funnel comercial estructurado: scripts, follow-up, reducción de no-shows y cierre previsible." },
+        { n: "03", title: "Conversión", desc: "Funnel comercial estructurado: scripts, seguimiento al cliente, reducción de citas perdidas y cierre previsible." },
         { n: "04", title: "Retención", desc: "Programas de recurrencia, post-venta y ciclo de vida. Cliente que vuelve vale 5× lo que entra." },
-        { n: "05", title: "Crecimiento", desc: "Escala con previsibilidad — no con ansiedad. Decisiones en datos, no en intuición." },
+        { n: "05", title: "Crecimiento", desc: "Escala con previsibilidad — no con ansiedad. Decisiones en datos, no en suposiciones." },
       ],
     },
     features: {
       eyebrow: "Qué cambia en tu negocio",
       h2: "Cada entrega se vuelve impacto directo en la operación.",
       items: [
-        { title: "Claridad de números", desc: "Pasas a saber CAC, LTV, ticket promedio, conversión y payback. La decisión deja de ser intuición." },
+        { title: "Claridad de números", desc: "Empiezas a entender cuánto cuesta cada cliente, cuánto deja en tu negocio y si estás creciendo de verdad. Las decisiones se basan en datos, no en suposiciones." },
         { title: "Posicionamiento que vende", desc: "Mensaje que conversa con el público real — brasileños e hispanos en el mercado americano de belleza." },
-        { title: "Funnel que cierra", desc: "Del primer contacto a la venta recurrente, con scripts, follow-up y reducción de no-shows." },
+        { title: "Funnel que cierra", desc: "Del primer contacto a la venta recurrente, con scripts, seguimiento y reducción de citas perdidas." },
         { title: "Equipo entrenado", desc: "Tu equipo de ventas deja de improvisar y opera con método replicable." },
-        { title: "Tráfico con ROI", desc: "Media pagada conectada a la venta, no a likes. CAC bajo control, escala previsible." },
-        { title: "Socios involucrados", desc: "Quien conduce tu proyecto son los socios — Renato, Bruno, Camila y Paola — no becarios." },
+        { title: "Tráfico con ROI", desc: "Media pagada conectada a la venta, no a likes. Costo por cliente bajo control, escala previsible." },
+        { title: "Socios involucrados", desc: "Los socios — Renato, Bruno, Camila y Paola — participan activamente en cada proyecto, garantizando dirección estratégica y calidad en la ejecución." },
       ],
     },
     midCta: {
       h2: "Cada mes de improvisación es un mes de margen que no recuperas.",
-      sub: "El diagnóstico es gratuito. La claridad, irreversible.",
+      sub: "El diagnóstico es gratuito. Lo que vas a descubrir sobre tu negocio, no tiene precio.",
       cta: "Solicitar Diagnóstico Estratégico",
     },
     trust: {
       eyebrow: "Nuestro compromiso",
-      h2: "La honestidad que le falta al mercado.",
-      promise: "Antes de aceptar cualquier proyecto, hacemos un análisis de 48 horas. Si Zoomma no es la socia correcta para tu momento, te lo decimos. Sin rodeos.",
+      h2: "Integridad y honestidad por encima de todo.",
+      promise: "Antes de iniciar cualquier proyecto, dedicamos 48 horas para entender si somos realmente el socio adecuado para ti en este momento. Si no lo somos, te lo decimos con claridad — porque creemos que el encaje correcto importa más que cerrar un contrato más.",
       notFor: "Zoomma no es para ti si",
       forYou: "Zoomma es para ti si",
       notForList: [
@@ -448,7 +451,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       forYouList: [
         "Quieres un socio estratégico involucrado en la operación.",
         "Estás dispuesto a mirar los datos — incluso los incómodos.",
-        "Entiendes que crecimiento sostenible toma tiempo, no milagros.",
+        "Entiendes que crecimiento sostenible toma tiempo, no es un milagro.",
         "Operas en el mercado de belleza en EE.UU. y quieres escalar con claridad.",
       ],
     },
@@ -458,12 +461,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       sub: "No hay ataque a nadie aquí. Solo una diferencia real de modelo de trabajo.",
       headers: { col1: "Criterio", col2: "Agencia tradicional", col3: "Zoomma" },
       rows: [
-        { topic: "Quién conduce", agency: "Becario o junior", zoomma: "Socios de la operación" },
+        { topic: "Quién cuida la estrategia", agency: "Equipos con muchos clientes simultáneos", zoomma: "Socios directamente involucrados" },
         { topic: "Alcance", agency: "Marketing aislado", zoomma: "Estrategia + marketing + ventas" },
-        { topic: "Métrica", agency: "Clicks, alcance, likes", zoomma: "CAC, LTV, margen, payback" },
+        { topic: "Métrica principal", agency: "Clicks, alcance y likes", zoomma: "Clientes generados, margen y crecimiento real" },
         { topic: "Modelo", agency: "Paquete rígido", zoomma: "Proyecto a medida" },
-        { topic: "Vínculo", agency: "Contrato, fee mensual", zoomma: "Socia de crecimiento" },
-        { topic: "Velocidad", agency: "Más rápida en tareas tácticas", zoomma: "Más lenta al inicio — invertimos en el diagnóstico" },
+        { topic: "Postura", agency: "Proveedor de servicio", zoomma: "Socio estratégico dedicado" },
+        { topic: "Velocidad de ejecución", agency: "Entrega rápida desde el inicio", zoomma: "Empieza con diagnóstico — para crecer en la dirección correcta" },
       ],
       fairness: "Sí, una agencia entrega rápido en tareas puntuales. Si eso es lo que necesitas, no somos la mejor opción — y está bien.",
     },
@@ -474,27 +477,27 @@ export const dictionaries: Record<Locale, Dictionary> = {
         { q: "¿Qué es Zoomma?", a: "Zoomma es una consultoría estratégica de marketing para negocios de belleza — salones, clínicas y armonización — operados por brasileños e hispanos en EE.UU. Unimos estrategia, marketing y gestión comercial." },
         { q: "¿Trabajan con cualquier negocio de belleza?", a: "Trabajamos con negocios ya operando, con facturación, que quieren claridad para escalar. No atendemos quien está abriendo desde cero — no es nuestro foco." },
         { q: "¿Cuánto cuesta?", a: "Cada proyecto es único. Tras el diagnóstico de 48 horas, presentamos un plan e inversión a medida. No trabajamos con paquetes rígidos." },
-        { q: "¿En cuánto tiempo veo resultado?", a: "Resultados de tráfico y captación aparecen en semanas. Resultados estructurales — margen, posicionamiento, retención — llevan de 90 a 180 días. Quien promete antes está mintiendo." },
+        { q: "¿En cuánto tiempo veo resultado?", a: "Resultados de tráfico y captación aparecen en semanas. Resultados estructurales — margen, posicionamiento, retención — llevan de 90 a 180 días. Cualquier promesa de plazo menor merece evaluarse con cuidado." },
         { q: "¿Atienden en portugués, español e inglés?", a: "Sí. Operamos en los tres idiomas del mercado: PT-BR, ES e EN. Toda la comunicación ocurre en el idioma que prefieras." },
-        { q: "¿Quién conduce mi proyecto?", a: "Los socios — Renato, Bruno, Camila y Paola. No tercerizamos la estrategia. Camila y Paola traen experiencia directa del sector belleza." },
+        { q: "¿Quién conduce mi proyecto?", a: "Los socios — Renato, Bruno, Camila y Paola. La estrategia pasa por nosotros. Camila y Paola traen experiencia directa del sector belleza." },
         { q: "¿Cómo empieza?", a: "Llenas el formulario o haces clic en WhatsApp. En hasta 48 horas, hacemos un análisis inicial y te decimos si Zoomma es la sociedad correcta para tu momento." },
       ],
     },
     finalCta: {
       eyebrow: "Siguiente paso",
       h2: "Solicita tu Diagnóstico Estratégico.",
-      sub: "En 48 horas, regresamos con un análisis inicial de tu negocio. Sin compromiso. Sin presión de venta.",
+      sub: "En hasta 48 horas, nos ponemos en contacto para iniciar el proceso de análisis. Sin compromiso y sin presión.",
       form: {
         name: "Nombre completo",
         whatsapp: "WhatsApp (con código)",
-        instagram: "Instagram del negocio (opcional)",
+        instagram: "Instagram del negocio",
         email: "Email (opcional)",
         challenge: "Mayor desafío hoy",
         challenge_options: [
           "Facturación estancada",
-          "CAC alto / margen bajo",
+          "Costo por cliente alto / margen bajo",
           "Equipo de ventas sin método",
-          "Muchos no-shows / leads fríos",
+          "Muchas citas perdidas / leads fríos",
           "Posicionamiento confuso",
           "Otro",
         ],
@@ -510,7 +513,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       },
     },
     footer: {
-      tagline: "Marketing Consultivo Estratégico para la belleza en EE.UU.",
+      tagline: "Socio estratégico de crecimiento para el mercado de belleza.",
       rights: "Todos los derechos reservados.",
       contact: "Contacto",
     },
@@ -534,7 +537,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
       cta: "Strategic Diagnosis",
     },
     hero: {
-      eyebrow: "Strategic Marketing Consulting",
+      eyebrow: "For clinics, salons and beauty studios",
+      niche_strip: "Aesthetic clinics · Beauty studios · Facial harmonization · Salons",
       h1_line1: "Stop improvising.",
       h1_line2: "Start scaling.",
       aeo: "Zoomma is a strategic marketing consultancy for beauty businesses — salons, clinics, and aesthetic harmonization — operated by Brazilians and Hispanics in the United States. We integrate business strategy, sales-driven marketing, and commercial management under one partner.",
@@ -546,23 +550,23 @@ export const dictionaries: Record<Locale, Dictionary> = {
     problem: {
       eyebrow: "What we're seeing",
       h2: "You don't have a marketing problem. You have a clarity problem.",
-      intro: "We've spoken with dozens of beauty business owners in the U.S. The symptoms repeat:",
+      intro: "We've spoken with dozens of beauty business owners. The symptoms repeat:",
       pains: [
         "Revenue grows, but margin doesn't follow — and nobody can explain why.",
-        "Paid traffic running, leads coming in — yet the calendar still has gaps from no-shows.",
-        "Sales team closing on improvisation, with no method, no follow-up, no predictability.",
+        "Paid traffic running, leads coming in — yet clients who book and don't show up keep blocking the schedule.",
+        "Sales team closing on improvisation, with no method, no client follow-through, no predictability.",
         "Beautiful content on Instagram, with no commercial purpose, disconnected from the offer.",
-        "Decisions made on gut feeling — not on data, not on strategy.",
+        "Decisions made by guesswork — not on data, not on strategy.",
       ],
     },
     solution: {
       eyebrow: "Zoomma",
-      h2: "We're not an agency. We're your growth partner.",
-      sub: "Three integrated fronts, led by the partners — never outsourced to interns. Strategy that talks to sales that talks to marketing.",
+      h2: "We're not an agency. We're your strategic growth partner.",
+      sub: "Three integrated fronts, with the partners directly involved in strategy. Marketing that talks to sales that talks to the business.",
       pillars: [
         { kicker: "01", title: "Business Strategy", desc: "Deep diagnosis, positioning, growth plan. You leave knowing where you are, where you're going, and how to get there." },
-        { kicker: "02", title: "Sales-Driven Marketing", desc: "Content with commercial purpose. Paid traffic calibrated by CAC and LTV — not by vanity." },
-        { kicker: "03", title: "Commercial Management", desc: "Sales training, scripts, structured follow-up and no-show reduction. Leads that come in, leads that close." },
+        { kicker: "02", title: "Sales-Driven Marketing", desc: "Content with commercial purpose. Paid traffic built to bring real clients — not to inflate numbers without return." },
+        { kicker: "03", title: "Commercial Management", desc: "Sales training, scripts, structured client follow-through and reduced missed appointments. Leads that come in, leads that close." },
       ],
     },
     method: {
@@ -572,32 +576,32 @@ export const dictionaries: Record<Locale, Dictionary> = {
       steps: [
         { n: "01", title: "Strategy", desc: "Diagnosis, positioning and plan. Before touching any ad, we understand the business." },
         { n: "02", title: "Attraction", desc: "Content and paid media calibrated for the right audience, with messaging aligned to the offer." },
-        { n: "03", title: "Conversion", desc: "Structured commercial funnel: scripts, follow-up, no-show reduction and predictable closing." },
+        { n: "03", title: "Conversion", desc: "Structured commercial funnel: scripts, client follow-through, fewer missed appointments and predictable closing." },
         { n: "04", title: "Retention", desc: "Recurrence programs, post-sale and lifecycle. A returning client is worth 5× a new one." },
-        { n: "05", title: "Growth", desc: "Scale with predictability — not anxiety. Decisions on data, not gut feeling." },
+        { n: "05", title: "Growth", desc: "Scale with predictability — not anxiety. Decisions on data, not guesswork." },
       ],
     },
     features: {
       eyebrow: "What changes in your business",
       h2: "Each delivery becomes direct operational impact.",
       items: [
-        { title: "Number clarity", desc: "You start knowing CAC, LTV, average ticket, conversion rate and payback. Decisions stop being feeling." },
+        { title: "Number clarity", desc: "You start understanding what each client costs, what they bring to your business, and whether you're truly growing. Decisions become data-driven, not guesswork." },
         { title: "Positioning that sells", desc: "Messaging that speaks to the real audience — Brazilians and Hispanics in the American beauty market." },
-        { title: "A funnel that closes", desc: "From first contact to recurring sale, with scripts, follow-up and no-show reduction." },
+        { title: "A funnel that closes", desc: "From first contact to recurring sale, with scripts, client follow-through and fewer missed appointments." },
         { title: "Trained team", desc: "Your sales team stops improvising and operates with a replicable method." },
-        { title: "Traffic with ROI", desc: "Paid media tied to sales, not likes. CAC under control, predictable scale." },
-        { title: "Partners involved", desc: "Your project is led by the partners — Renato, Bruno, Camila and Paola — never interns." },
+        { title: "Traffic with ROI", desc: "Paid media tied to sales, not likes. Client acquisition cost under control, predictable scale." },
+        { title: "Partners involved", desc: "The partners — Renato, Bruno, Camila and Paola — are actively involved in every project, ensuring strategic direction and quality throughout." },
       ],
     },
     midCta: {
       h2: "Every month of improvisation is a month of margin you don't recover.",
-      sub: "The diagnosis is free. Clarity is irreversible.",
+      sub: "The diagnosis is free. What you'll discover about your business is priceless.",
       cta: "Request Strategic Diagnosis",
     },
     trust: {
       eyebrow: "Our commitment",
-      h2: "The honesty the market is missing.",
-      promise: "Before accepting any project, we run a 48-hour analysis. If Zoomma isn't the right partner for your moment, we say so. No spin.",
+      h2: "Integrity and honesty, above everything else.",
+      promise: "Before starting any project, we take 48 hours to understand whether we're truly the right partner for your moment. If we're not, we say so clearly — because the right fit matters more to us than signing another contract.",
       notFor: "Zoomma is NOT for you if",
       forYou: "Zoomma IS for you if",
       notForList: [
@@ -609,7 +613,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       forYouList: [
         "You want a strategic partner involved in the operation.",
         "You're willing to look at the data — even the uncomfortable parts.",
-        "You understand sustainable growth takes time, not miracles.",
+        "You understand sustainable growth takes time — it's not a miracle.",
         "You operate in the U.S. beauty market and want to scale with clarity.",
       ],
     },
@@ -619,12 +623,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
       sub: "No attack on anyone here. Just a real difference in working model.",
       headers: { col1: "Criterion", col2: "Traditional agency", col3: "Zoomma" },
       rows: [
-        { topic: "Who leads", agency: "Intern or junior", zoomma: "Operating partners" },
+        { topic: "Who owns the strategy", agency: "Teams juggling many clients at once", zoomma: "Partners directly involved" },
         { topic: "Scope", agency: "Marketing in isolation", zoomma: "Strategy + marketing + sales" },
-        { topic: "Metric", agency: "Clicks, reach, likes", zoomma: "CAC, LTV, margin, payback" },
+        { topic: "Key metric", agency: "Clicks, reach and likes", zoomma: "Clients generated, margin and real growth" },
         { topic: "Model", agency: "Rigid package", zoomma: "Custom project" },
-        { topic: "Bond", agency: "Contract, monthly fee", zoomma: "Growth partner" },
-        { topic: "Speed", agency: "Faster on tactical tasks", zoomma: "Slower at first — we invest in diagnosis" },
+        { topic: "Posture", agency: "Service vendor", zoomma: "Dedicated strategic partner" },
+        { topic: "Execution speed", agency: "Fast delivery from day one", zoomma: "Starts with diagnosis — to grow in the right direction" },
       ],
       fairness: "Yes, an agency delivers fast on point tasks. If that's what you need, we're not the best fit — and that's fine.",
     },
@@ -635,27 +639,27 @@ export const dictionaries: Record<Locale, Dictionary> = {
         { q: "What is Zoomma?", a: "Zoomma is a strategic marketing consultancy for beauty businesses — salons, clinics and aesthetic harmonization — operated by Brazilians and Hispanics in the U.S. We integrate strategy, marketing and commercial management." },
         { q: "Do you work with any beauty business?", a: "We work with operating businesses, generating revenue, that want clarity to scale. We don't serve those starting from scratch — it's not our focus." },
         { q: "How much does it cost?", a: "Each project is unique. After the 48-hour diagnosis, we present a custom plan and investment. We don't work with rigid packages." },
-        { q: "How long until I see results?", a: "Traffic and lead-gen results show up in weeks. Structural results — margin, positioning, retention — take 90 to 180 days. Anyone promising sooner is lying." },
+        { q: "How long until I see results?", a: "Traffic and lead-gen results show up in weeks. Structural results — margin, positioning, retention — take 90 to 180 days. Any shorter timeline promise should be evaluated carefully." },
         { q: "Do you work in Portuguese, Spanish and English?", a: "Yes. We operate in all three market languages: PT-BR, ES and EN. All communication happens in the language you prefer." },
-        { q: "Who runs my project?", a: "The partners — Renato, Bruno, Camila and Paola. We don't outsource strategy. Camila and Paola bring direct expertise from the beauty sector." },
+        { q: "Who runs my project?", a: "The partners — Renato, Bruno, Camila and Paola. Strategy goes through us. Camila and Paola bring direct expertise from the beauty sector." },
         { q: "How does it start?", a: "You fill out the form or click WhatsApp. Within 48 hours we run an initial analysis and tell you if Zoomma is the right partner for your moment." },
       ],
     },
     finalCta: {
       eyebrow: "Next step",
       h2: "Request your Strategic Diagnosis.",
-      sub: "Within 48 hours, we'll come back with an initial analysis of your business. No commitment. No sales pressure.",
+      sub: "Within 48 hours, we'll reach out to begin the analysis process. No commitment and no sales pressure.",
       form: {
         name: "Full name",
         whatsapp: "WhatsApp (with country code)",
-        instagram: "Business Instagram (optional)",
+        instagram: "Business Instagram",
         email: "Email (optional)",
         challenge: "Biggest challenge today",
         challenge_options: [
           "Stagnant revenue",
-          "High CAC / low margin",
+          "High client cost / low margin",
           "Sales team without method",
-          "Too many no-shows / cold leads",
+          "Too many missed appointments / cold leads",
           "Confused positioning",
           "Other",
         ],
@@ -671,7 +675,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
       },
     },
     footer: {
-      tagline: "Strategic Marketing Consulting for beauty in the U.S.",
+      tagline: "Strategic growth partner for the beauty market.",
       rights: "All rights reserved.",
       contact: "Contact",
     },

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServiceClient } from "@/lib/supabase/server";
 import { sendTelegram } from "@/lib/telegram/client";
+import { sendEmail } from "@/lib/resend/client";
 import { LeadInputSchema } from "@/types/lead";
 
 export const runtime = "nodejs";
@@ -64,16 +65,31 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ ok: false, error: "db" }, { status: 500 });
     }
 
-    // Fire-and-forget telegram notification (don't block the response)
-    void sendTelegram({
-      text:
-        `*Novo lead Zoomma* \\[${data.source}]\n` +
-        `*Nome:* ${data.nome}\n` +
-        `*WhatsApp:* ${data.whatsapp}\n` +
-        (data.instagram ? `*Instagram:* ${data.instagram}\n` : "") +
-        (data.email ? `*Email:* ${data.email}\n` : "") +
-        (data.maior_desafio ? `*Desafio:* ${data.maior_desafio}\n` : "") +
-        `*Idioma:* ${data.locale}`,
+    const telegramText =
+      `*Novo lead Zoomma* (${data.source})\n` +
+      `*Nome:* ${data.nome}\n` +
+      `*WhatsApp:* ${data.whatsapp}\n` +
+      (data.instagram ? `*Instagram:* ${data.instagram}\n` : "") +
+      (data.email ? `*Email:* ${data.email}\n` : "") +
+      (data.maior_desafio ? `*Desafio:* ${data.maior_desafio}\n` : "") +
+      `*Idioma:* ${data.locale}`;
+
+    void sendTelegram({ text: telegramText });
+
+    void sendEmail({
+      subject: `Novo lead Zoomma [${data.source}] — ${data.nome}`,
+      html: `
+        <h2 style="font-family:sans-serif">Novo lead — Zoomma</h2>
+        <table style="font-family:sans-serif;font-size:14px;border-collapse:collapse">
+          <tr><td style="padding:4px 12px 4px 0;color:#666">Nome</td><td><strong>${data.nome}</strong></td></tr>
+          <tr><td style="padding:4px 12px 4px 0;color:#666">WhatsApp</td><td>${data.whatsapp}</td></tr>
+          ${data.instagram ? `<tr><td style="padding:4px 12px 4px 0;color:#666">Instagram</td><td>${data.instagram}</td></tr>` : ""}
+          ${data.email ? `<tr><td style="padding:4px 12px 4px 0;color:#666">Email</td><td>${data.email}</td></tr>` : ""}
+          ${data.maior_desafio ? `<tr><td style="padding:4px 12px 4px 0;color:#666">Desafio</td><td>${data.maior_desafio}</td></tr>` : ""}
+          <tr><td style="padding:4px 12px 4px 0;color:#666">Idioma</td><td>${data.locale}</td></tr>
+          <tr><td style="padding:4px 12px 4px 0;color:#666">Fonte</td><td>${data.source}</td></tr>
+        </table>
+      `,
     });
 
     const wa = buildWhatsAppUrl(data.nome, data.locale, data.source);

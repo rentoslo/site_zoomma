@@ -41,6 +41,12 @@ export default function FinalCTA() {
     e.preventDefault();
     setStatus("submitting");
 
+    if (!form.instagram.trim()) {
+      setErrors({ instagram: "required" });
+      setStatus("idle");
+      return;
+    }
+
     const parsed = LeadInputSchema.safeParse({ ...form, source: "form", locale });
     if (!parsed.success) {
       const flat: Partial<Record<keyof FormState, string>> = {};
@@ -171,14 +177,16 @@ export default function FinalCTA() {
                     </div>
                     <div>
                       <label htmlFor="instagram" className="label">
-                        {t.finalCta.form.instagram}
+                        {t.finalCta.form.instagram} *
                       </label>
                       <Input
                         id="instagram"
                         type="text"
                         value={form.instagram}
                         onChange={(e) => update("instagram", e.target.value)}
+                        hasError={!!errors.instagram}
                         placeholder="@..."
+                        required
                       />
                     </div>
                   </div>

@@ -37,7 +37,11 @@ export default function Hero() {
             </span>
           </h1>
 
-          <blockquote className="mx-auto mt-10 max-w-3xl border-l-2 border-electric/40 pl-5 text-left text-lg leading-relaxed text-white/72 md:text-xl">
+          <p className="mt-6 text-sm tracking-[0.12em] text-white/45 uppercase">
+            {t.hero.niche_strip}
+          </p>
+
+          <blockquote className="mx-auto mt-8 max-w-3xl border-l-2 border-electric/40 pl-5 text-left text-lg leading-relaxed text-white/72 md:text-xl">
             {t.hero.aeo}
           </blockquote>
 
