@@ -1,17 +1,38 @@
+import { I18nProvider } from "@/lib/i18n/context";
+import Navbar from "@/components/landing/Navbar";
+import Hero from "@/components/landing/Hero";
+import Problem from "@/components/landing/Problem";
+import Solution from "@/components/landing/Solution";
+import Method from "@/components/landing/Method";
+import Features from "@/components/landing/Features";
+import MidCTA from "@/components/landing/MidCTA";
+import Trust from "@/components/landing/Trust";
+import Comparison from "@/components/landing/Comparison";
+import FAQ from "@/components/landing/FAQ";
+import FinalCTA from "@/components/landing/FinalCTA";
+import Footer from "@/components/landing/Footer";
+import WhatsAppFAB from "@/components/landing/WhatsAppFAB";
+import JsonLd from "@/components/landing/JsonLd";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-dark text-light">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold font-manrope text-brand">
-          🚀 Template Base Zoomma
-        </h1>
-        <p className="text-lg text-light/70 font-inter">
-          Substitua esta página pelo conteúdo do seu projeto.
-        </p>
-        <p className="text-sm text-light/40">
-          Stack: Next.js 14 · Supabase · Anthropic · Apify · Resend · Telegram
-        </p>
-      </div>
-    </main>
+    <I18nProvider>
+      <JsonLd />
+      <Navbar />
+      <main className="bg-page relative">
+        <Hero />
+        <Problem />
+        <Solution />
+        <Method />
+        <Features />
+        <MidCTA />
+        <Trust />
+        <Comparison />
+        <FAQ />
+        <FinalCTA />
+      </main>
+      <Footer />
+      <WhatsAppFAB />
+    </I18nProvider>
   );
 }
