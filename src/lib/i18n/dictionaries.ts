@@ -150,8 +150,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     solution: {
       eyebrow: "A Zoomma",
-      h2: "Não somos agência. Somos seu sócio de crescimento.",
-      sub: "Três frentes juntas: estratégia, marketing e vendas. Os sócios metem a mão em tudo, não é tarefa de estagiário.",
+      h2: "Mais do que uma agência, somos seus parceiros de crescimento.",
+      sub: "Unimos estratégia, marketing e vendas em um só lugar. Aqui, os próprios sócios participam ativamente da execução, garantindo um olhar sênior em todas as etapas",
       pillars: [
         {
           kicker: "01",
@@ -173,12 +173,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
     method: {
       eyebrow: "O Método Zoomma",
       h2: "Cinco etapas. Uma direção: crescimento que dura.",
-      sub: "Sem fórmula pronta. Cada etapa é feita para seu negócio, pelos sócios.",
+      sub: "Sem fórmula pronta. Cada etapa é feita cuidadosamente para seu negócio.",
       steps: [
         {
           n: "01",
           title: "Estratégia",
-          desc: "A gente analisa tudo. Seu positioning, seu mercado, seu potencial. Daí vem o plano.",
+          desc: "A gente analisa tudo. Seu posicionamento, seu mercado, seu potencial. Daí vem o plano.",
         },
         {
           n: "02",
@@ -227,8 +227,8 @@ export const dictionaries: Record<Locale, Dictionary> = {
           desc: "Não estufamos métrica. Cada real gasto traz cliente. O custo fica sob controle, a escala fica previsível.",
         },
         {
-          title: "Sócios que cuidam de você",
-          desc: "Renato, Bruno, Camila e Paola estão no seu projeto. Estratégia e execução vêm deles, não de estagiário.",
+          title: "Caminhamos juntos",
+          desc: "Cuidamos da estratégia e da execução com a proximidade de quem realmente joga no mesmo time que o seu.",
         },
       ],
     },
@@ -239,7 +239,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     trust: {
       eyebrow: "Nosso compromisso",
-      h2: "A gente é honesto antes de tudo.",
+      h2: "Antes de tudo: honestidade.",
       promise: "Antes de qualquer projeto, a gente dedica 48 horas para entender se realmente somos o parceiro certo para você agora. Se não formos, a gente fala direto. Porque o encaixe certo importa mais do que fechar um contrato a mais.",
       notFor: "A Zoomma não é para você se",
       forYou: "A Zoomma é para você se",
@@ -270,7 +270,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         { topic: "O que a gente entrega", agency: "Marketing. Só isso.", zoomma: "Estratégia, marketing e vendas juntas" },
         { topic: "O que importa", agency: "Cliques, curtidas, alcance", zoomma: "Clientes reais, margem, crescimento" },
         { topic: "Como funciona", agency: "Pacote pronto", zoomma: "Tudo customizado para você" },
-        { topic: "Relação", agency: "Prestador de serviço", zoomma: "Sócio dedicado ao seu crescimento" },
+        { topic: "Relação", agency: "Prestador de serviço", zoomma: "Dedicação com seu crescimento" },
         { topic: "Velocidade", agency: "Rápida desde o começo", zoomma: "Começa com diagnóstico, cresce na direção certa" },
       ],
       fairness: "Agência é rápida em tarefas pontuais. Se é só isso que você precisa, a gente não é a melhor saída. E tudo bem.",
@@ -301,7 +301,7 @@ export const dictionaries: Record<Locale, Dictionary> = {
         },
         {
           q: "Quem cuida do meu projeto?",
-          a: "Os sócios. Renato, Bruno, Camila e Paola. A gente não passa para estagiário. Camila e Paola conhecem o setor de beleza por dentro.",
+          a: "Renato e Bruno lidamos com seu projeto. Camila e Paola conhecem o setor de beleza por dentro.",
         },
         {
           q: "Como a gente começa?",
