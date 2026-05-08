@@ -605,21 +605,21 @@ export const dictionaries: Record<Locale, Dictionary> = {
       notFor: "Zoomma is NOT for you if",
       forYou: "Zoomma IS for you if",
       notForList: [
-        "You want an agency that delivers pretty posts and an end-of-month report.",
+        "You want an agency delivering pretty posts and a monthly report.",
         "You're looking for the 'magic formula' that scales without touching the business.",
         "You want to outsource marketing and never think about it again.",
         "You expect results in 7 days.",
       ],
       forYouList: [
         "You want a strategic partner involved in the operation.",
-        "You're willing to look at the data — even the uncomfortable parts.",
+        "You're open to facing the data, even when it hurts.",
         "You understand sustainable growth takes time — it's not a miracle.",
         "You operate in the U.S. beauty market and want to scale with clarity.",
       ],
     },
     comparison: {
       eyebrow: "Zoomma vs Traditional agency",
-      h2: "Why we're not an agency.",
+      h2: "Why we're not an agency",
       sub: "No attack on anyone here. Just a real difference in working model.",
       headers: { col1: "Criterion", col2: "Traditional agency", col3: "Zoomma" },
       rows: [
